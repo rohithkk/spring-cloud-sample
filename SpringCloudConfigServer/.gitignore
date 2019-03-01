@@ -1,0 +1,6 @@
+/.gradle/
+bin
+/bin
+gradlew
+gradlew.bat
+gradle
