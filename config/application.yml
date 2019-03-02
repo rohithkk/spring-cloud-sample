@@ -1,2 +1,7 @@
+#Any configuration specified in application.yml will be handed of to all of the client applications.
+#for example, the property test
+
 test:
-   name: Rohith
+   prop:
+      one: a
+      two: b             

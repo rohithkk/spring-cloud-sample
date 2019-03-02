@@ -11,7 +11,7 @@ spring:
             git:
                #configs can either be sourced directly from remote git repository or a clone of the repo on the file system
                #if pointing to local repo, make sure it is up to date with remote repo. Otherwise, local changes will be lost
-               #uri: https://github.com/rohithkk/spring-cloud-sample   
-               #searchPaths: config               
-               uri: file:///Users/rohith/workspace/codespace/spring-cloud-sample
-               searchPaths: config
+               uri: https://github.com/rohithkk/spring-cloud-sample   
+               searchPaths: config               
+               #uri: file:///Users/rohith/workspace/codespace/spring-cloud-sample
+               #searchPaths: config
