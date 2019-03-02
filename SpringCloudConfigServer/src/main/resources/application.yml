@@ -10,5 +10,7 @@ spring:
          server:
             git:
                #configs can either be sourced directly from remote git repository
-               uri: https://github.com/rohithkk/spring-cloud-sample   
-               searchPaths: config               
+               #uri: https://github.com/rohithkk/spring-cloud-sample   
+               #searchPaths: config               
+               uri: file:///Users/rohith/workspace/codespace/spring-cloud-sample
+               searchPaths: config
