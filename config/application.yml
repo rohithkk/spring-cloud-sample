@@ -1,7 +1,13 @@
 #Any configuration specified in application.yml will be handed of to all of the client applications.
-#for example, the property test
+#for example, the properties test.prop.one and test.prop.two are available for
+#both the clients "address" and "users" across all the profiles
+
+#the clients do have an option of overwriting any property.
+#for example, client "users" overwrites test.prop.one in dev profile. On the "users" client,
+#if one were to access the property by using either "Environment" or @Value annotation, it would see x
+# but on the client app "address", the same property's value would be "a"
 
 test:
    prop:
       one: a
-      two: b             
+      two: b
