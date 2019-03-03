@@ -1,9 +1,4 @@
 test:
    prop:
       one: x
-
-user:
-   name:
-      first: Rohith
-      last: Kodakandla
-   id: 1250
+      three: z

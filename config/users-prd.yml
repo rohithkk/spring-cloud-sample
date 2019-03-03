@@ -1,5 +1,4 @@
-user:
-   name:
-      first: Sneha
-      last: Kommidi
-   id: 1001         
+test:
+   prop:
+      one: 1
+      three: 3
