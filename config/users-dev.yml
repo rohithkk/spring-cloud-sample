@@ -1,4 +1,15 @@
+#test properties for hierarchy validation.. check application.yml
 test:
    prop:
       one: x
       three: z
+
+#config for Eureka server lookup
+server:
+   port: 0
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+   instance:
+      preferIpAddress: true
