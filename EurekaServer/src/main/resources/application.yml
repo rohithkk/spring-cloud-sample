@@ -1,7 +1,0 @@
-server:
-   port: 8761
-eureka:
-   client:
-   #this application will be Eureka server.. it shouldn't reigster itself
-      registerWithEureka: false
-      fetchRegistry: false
