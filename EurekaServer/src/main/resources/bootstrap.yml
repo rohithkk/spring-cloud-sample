@@ -1,0 +1,9 @@
+spring:
+   cloud:
+      config:
+         name: discovery
+         uri: http://localhost:8081
+         #fail on startup if the client cannot connect to the config server
+         fail-fast: true
+   profiles:
+      active: dev      

@@ -34,8 +34,8 @@ targetCompatibility = 1.8
 dependencies {
     
     implementation ("org.springframework.boot:spring-boot-starter-web")
-    implementation ("org.springframework.boot:spring-boot-starter-security")
     implementation ("org.springframework.cloud:spring-cloud-starter:$springCloudVersion")
+    implementation ("org.springframework.cloud:spring-cloud-starter-config:$springCloudVersion")
     implementation ("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:$springCloudVersion")
     
     
