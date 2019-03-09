@@ -11,14 +11,14 @@ spring:
             git:
                #configs can either be sourced directly from remote git repository or a clone of the repo on the file system
                #if pointing to local repo, make sure it is up to date with remote repo. Otherwise, local changes will be lost
-               uri: https://github.com/rohithkk/spring-cloud-sample
-               searchPaths: config
+               #uri: https://github.com/rohithkk/spring-cloud-sample
+               #searchPaths: config
                # default is false. set to true if Git Repo's SSL check needs to be turned off
-               skipSslValidation: true
+               #skipSslValidation: true
                # amount of time, in seconds, that the config server will wait to get Http connection
                timeout: 5
-               #uri: file:///Users/rohith/workspace/codespace/spring-cloud-sample
-               #searchPaths: config
+               uri: file:///Users/rohith/workspace/codespace/spring-cloud-sample
+               searchPaths: config
 
 eureka:
    client:
