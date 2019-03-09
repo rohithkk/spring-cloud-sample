@@ -11,4 +11,4 @@ management:
 #We can also expose individual endpoints, like "expose.include=metric,config"
          exposure: 
             include: "*"  
-            exclude: metrics, mappings        
+#            exclude: metrics, mappings        

@@ -38,6 +38,7 @@ dependencies {
     implementation ("org.springframework.boot:spring-boot-starter-actuator")
     implementation ("org.springframework.cloud:spring-cloud-starter-config:$springCloudVersion")
     implementation ("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:$springCloudVersion")
+    implementation ("io.micrometer:micrometer-registry-prometheus:1.1.3")
     
     
     testImplementation("org.springframework.boot:spring-boot-starter-test")
