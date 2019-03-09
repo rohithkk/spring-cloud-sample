@@ -1,5 +1,7 @@
 management:
    endpoints:
+      health:
+         show-details: when_authorized
       web:
          base-path: /management/ 
 #by default only the /health and /info http endpoints are exposed. 
@@ -8,5 +10,5 @@ management:
 #We can also expose individual endpoints, like "expose.include=metric,config"
          exposure: 
             include: "*"  
-#            exclude: metrics, mappings
+            exclude: metrics, mappings
         
