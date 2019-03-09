@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'SpringCloudConfigClient'
+rootProject.name = 'Users-SpringCloudConfigClient'
