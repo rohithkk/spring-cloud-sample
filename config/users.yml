@@ -1,0 +1,12 @@
+management:
+   endpoints:
+      web:
+         base-path: /management/ 
+#by default only the /health and /info http endpoints are exposed. 
+#To expose all the "enabled" endpoints, we can say "exposure.include = *"
+#If we are exposing all the enabled endpoints, we can exclude a few by mentioning "expoise.exclude = xxx,yyy"
+#We can also expose individual endpoints, like "expose.include=metric,config"
+         exposure: 
+            include: "*"  
+#            exclude: metrics, mappings
+        
