@@ -1,0 +1,11 @@
+server:
+   application:
+      name:discovery
+   port: 8761
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+      #this application will be Eureka server.. it shouldn't reigster itself
+      registerWithEureka: false
+      fetchRegistry: false

@@ -1,7 +1,7 @@
 #default server port
 server:
    port: 8888
-
+   
 spring:
    application:
       name: config-server
