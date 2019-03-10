@@ -25,6 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			.authorizeRequests()
 				.requestMatchers(EndpointRequest.to(HealthEndpoint.class)).permitAll()
 				.requestMatchers(EndpointRequest.toAnyEndpoint()).hasRole("ADMIN")
+				.antMatchers("/hello").permitAll()
 				.anyRequest().authenticated() //make sure all the URLs require authenticated users
 				.and() // and is like closing tag of an element in XML.. denotes the closing of current element and next one can start
 			.formLogin() // support form based login

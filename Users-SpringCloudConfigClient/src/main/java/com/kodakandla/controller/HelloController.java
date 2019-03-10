@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,17 +13,25 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.netflix.discovery.EurekaClient;
+import com.netflix.discovery.shared.Application;
 
 @RestController
 public class HelloController {
 
 	@Autowired
-	@Lazy
+	//@Lazy - don't do this if the bean is going to be used immediately, like in the hello method below. Bean won't be initialized until the first access
+	//and the method may throw NPE
 	private EurekaClient eurekaClient;
 	
 	@GetMapping(value="/hello")
 	public String hello() {
-		return String.format("Hello from '%s'!", eurekaClient.getApplication(appName).getName());
+		
+		Application app = eurekaClient.getApplication(appName);
+		
+		if(app == null)
+			return String.format("Hello from ANON app!");
+		
+		return String.format("Hello from %s app", app.getName());
 	}
 	
 	@RequestMapping( value = "/getProps",  method = RequestMethod.GET)
