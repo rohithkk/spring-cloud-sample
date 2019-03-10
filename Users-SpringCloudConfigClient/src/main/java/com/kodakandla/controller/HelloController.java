@@ -1,4 +1,4 @@
-package com.kodakandla;
+package com.kodakandla.controller;
 
 import java.util.HashMap;
 import java.util.Map;
