@@ -1,4 +1,4 @@
-package com.kodakandla;
+package com.kodakandla.config;
 
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.boot.actuate.health.HealthEndpoint;
