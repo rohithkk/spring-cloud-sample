@@ -1,7 +1,8 @@
 server:
-   application:
-      name:discovery
    port: 8761
+spring:
+  application:
+    name: discovery   
 eureka:
    client:
       serviceUrl:
