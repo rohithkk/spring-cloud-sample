@@ -1,2 +1,2 @@
 
-include ":EurekaServer",":SpringCloudConfigServer",":Users-SpringCloudConfigClient"
+include ":EurekaServer",":SpringCloudConfigServer",":Users-SpringCloudConfigClient",":Gateway",":Catalog"

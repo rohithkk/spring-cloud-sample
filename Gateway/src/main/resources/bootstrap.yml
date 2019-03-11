@@ -1,9 +1,10 @@
 spring:
    application:
-      name: users
+      name: gateway
    cloud:
       config:
-        uri: http://localhost:8888/config-server
+        name: gateway
+        uri: http://localhost:8888
         #fail on startup if the client cannot connect to the config server
         fail-fast: true
         username: user
